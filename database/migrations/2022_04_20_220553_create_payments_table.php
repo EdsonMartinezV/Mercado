@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
-            $table->tinyint('has_been_paid',1);
+            $table->boolean('has_been_paid',1);
             $table->timestamps();
         });
     }

@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('description',150);
             $table->string('consignment',150);
             $table->double('handling',8,2);
-            $table->tinyint('status')->default(1);
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }
