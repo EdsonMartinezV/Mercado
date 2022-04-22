@@ -11,7 +11,12 @@
 
     <h2>{{ $product->name }}</h2>
     <p>{{ $product->publishedAt }}</p>
-    @foreach ($product->questions() as $question)
-    @endforeach
+    <p>Preguntas</p>
+    <ul>
+        @foreach ($product->questions() as $question)
+            <li>{{ $question }}</li>
+        @endforeach
+    </ul>
+    <p>Unidades vendidas{{ $product->compra().count() }}</p>
 </body>
 </html>

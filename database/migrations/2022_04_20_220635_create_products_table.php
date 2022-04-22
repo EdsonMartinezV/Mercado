@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->varchar('name',100);
+            $table->string('name',100);
             $table->double('price',8,2);
-            $table->varchar('description',150);
-            $table->varchar('consignment',150);
+            $table->string('description',150);
+            $table->string('consignment',150);
             $table->double('handling',8,2);
             $table->tinyint('status')->default(1);
             $table->timestamps();

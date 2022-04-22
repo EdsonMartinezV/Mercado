@@ -17,7 +17,7 @@ return new class extends Migration
         Schema::create('califications', function (Blueprint $table) {
             $table->id();
             $table->double('calification',1,1);
-            $table->varchar('comment',150);
+            $table->string('comment',150);
             $table->timestamps();
         });
     }

@@ -11,5 +11,11 @@
 
     <img src="{{ $product->image }}" alt="">
     <h2>{{ $product->name }}</h2>
+    <p>{{ $product->price }}</p>
+    <form action="/products/{{ $product->id }}/questions" method="POST">
+        @csrf
+        <input type="text" name="question" id="" placeholder="Preguntale algo al vendedor">
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>

@@ -9,6 +9,8 @@
 <body>
     @include ('header2')
     <form action="/supervise/save-user-password/{{ $user->id }}" method="POST">
+        @csrf
+        @method('PUT')
         <input type="text" name="oldPassword" id="" value="{{ $user->password }}">
         <input type="password" name="newPassword" id="" placeholder="Nueva Contraseña">
         <input type="submit" value="Guardar Contraseña">

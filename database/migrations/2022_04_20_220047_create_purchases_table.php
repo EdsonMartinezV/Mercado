@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->double('amount',8,2);
             $table->enum('payment_method',['cash','credit_card','debit_card','bank_transfer']);
-            $table->varchar('payment_evidence',100);
+            $table->string('payment_evidence',100);
             $table->timestamps();
         });
     }

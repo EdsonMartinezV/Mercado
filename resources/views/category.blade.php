@@ -13,7 +13,7 @@
         @foreach ($category->products as $product)
             <div>
                 <img src="{{ $product->image }}" alt="">
-                <a href="/products/{{ $product->name }}">{{ $product->name }}</a>
+                <a href="/products/{{ $product->Id }}">{{ $product->name }}</a>
             </div>
         @endforeach
     </main>

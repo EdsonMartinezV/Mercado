@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('superviseds', function (Blueprint $table) {
             $table->id();
-            $table->varchar('name',100);
-            $table->varchar('email',100);
-            $table->varchar('password',50);
+            $table->string('name',100);
+            $table->string('email',100);
+            $table->string('password',50);
             $table->timestamps();
         });
     }
